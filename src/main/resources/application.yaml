@@ -1,0 +1,9 @@
+# Spring Boot Application and Actuator configuration
+server:
+  port: 18116
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,loggers"
