@@ -49,7 +49,7 @@ public class Controller {
     public ResponseEntity<SuperBankPaymentResponse> purchaseOrder(@RequestBody final SuperBankPaymentRequest purchaseRequest) {
 
         SuperBankPaymentResponse response;
-        if(purchaseRequest.getInstallments() == 666){
+        if(purchaseRequest.getInstallments() == 32){
             response = SuperBankPaymentResponse.builder()
                     .paymentId(UUID.randomUUID().toString()).responseMessage("APPROVED").state("approved").build();
         }
